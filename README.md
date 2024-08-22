@@ -72,7 +72,7 @@ This Python script scrapes data from [HTCampus](http://www.htcampus.com/) and st
    - You can customize the script to scrape additional data, change target URLs, or adjust the data storage format.
    - For advanced usage, consider implementing features like parallel processing, rate limiting, or enhanced error handling.
 
-**Logging**
+## Logging
     The script uses Python’s built-in logging module to track progress and errors. Logs include:
 
     Status of fetching URLs.
@@ -85,15 +85,15 @@ This Python script scrapes data from [HTCampus](http://www.htcampus.com/) and st
     The specific details scraped from each college page.
     The logging levels or format.
 
-**Potential Improvements**
+## Potential Improvements
     Parallelization: Implement parallel scraping for faster execution.
     Batch Insertion: Although batch insertion is ready, you can enhance the efficiency by grouping MongoDB insert operations.
     Rate Limiting: Implement rate limiting or sleep intervals to avoid overloading the target site.
 
-**License**
+## License
     This project is licensed under the MIT License. See the LICENSE file for details.
 
-**Contributions**
+## Contributions
     Contributions are welcome! If you find any issues or have suggestions, please open an issue or submit a pull request.
 
 ## Project Structure
