@@ -72,6 +72,30 @@ This Python script scrapes data from [HTCampus](http://www.htcampus.com/) and st
    - You can customize the script to scrape additional data, change target URLs, or adjust the data storage format.
    - For advanced usage, consider implementing features like parallel processing, rate limiting, or enhanced error handling.
 
+**Logging**
+    The script uses Python’s built-in logging module to track progress and errors. Logs include:
+
+    Status of fetching URLs.
+    Whether a category, subcategory, or college is already saved in the database.
+    Information on saving new entries to MongoDB.
+    Customizing the Script
+    You can modify the script to change:
+
+    The MongoDB connection settings.
+    The specific details scraped from each college page.
+    The logging levels or format.
+
+**Potential Improvements**
+    Parallelization: Implement parallel scraping for faster execution.
+    Batch Insertion: Although batch insertion is ready, you can enhance the efficiency by grouping MongoDB insert operations.
+    Rate Limiting: Implement rate limiting or sleep intervals to avoid overloading the target site.
+
+**License**
+    This project is licensed under the MIT License. See the LICENSE file for details.
+
+**Contributions**
+    Contributions are welcome! If you find any issues or have suggestions, please open an issue or submit a pull request.
+
 ## Project Structure
 
 ```plaintext
@@ -81,24 +105,3 @@ This Python script scrapes data from [HTCampus](http://www.htcampus.com/) and st
 ├── requirements.txt         # Python dependencies
 └── ...
 
-Logging
-The script uses Python’s built-in logging module to track progress and errors. Logs include:
-
-Status of fetching URLs.
-Whether a category, subcategory, or college is already saved in the database.
-Information on saving new entries to MongoDB.
-Customizing the Script
-You can modify the script to change:
-
-The MongoDB connection settings.
-The specific details scraped from each college page.
-The logging levels or format.
-Potential Improvements
-Parallelization: Implement parallel scraping for faster execution.
-Batch Insertion: Although batch insertion is ready, you can enhance the efficiency by grouping MongoDB insert operations.
-Rate Limiting: Implement rate limiting or sleep intervals to avoid overloading the target site.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-Contributions
-Contributions are welcome! If you find any issues or have suggestions, please open an issue or submit a pull request.
